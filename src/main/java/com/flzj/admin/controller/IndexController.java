@@ -37,13 +37,14 @@ public class IndexController {
 
     @GetMapping("/index.haha")
     public String toIndex(HttpSession httpSession,Model model){
-        User user = (User) httpSession.getAttribute("loginUser");
+/*        User user = (User) httpSession.getAttribute("loginUser");
         // 登入成功
         if(user != null) {
             return "index";
         }else{
             model.addAttribute("msg","请先登入");
             return "login";
-        }
+        }*/
+        return "index";
     }
 }
